@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Interativo de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="container header-content">
+            <h1>🛍️ Catálogo de Produtos</h1>
+            <nav>
+                <button id="btn-home" class="nav-btn active">Catálogo</button>
+                <button id="btn-favorites" class="nav-btn">Favoritos (<span id="fav-count">0</span>)</button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section id="search-section" class="search-bar">
+            <input type="text" id="search-input" placeholder="Pesquisar produtos pelo nome...">
+            <button id="search-btn">Buscar</button>
+        </section>
+
+        <div id="status-message" class="hidden"></div>
+
+        <section id="products-grid" class="grid"></section>
+    </main>
+
+    <div id="product-modal" class="modal hidden">
+        <div class="modal-content">
+            <button id="close-modal" class="close-btn">&times;</button>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Desenvolvido para Programação Web - UFOPA | Aluno: Flávio Figueiredo Bentes (2024013634)</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
